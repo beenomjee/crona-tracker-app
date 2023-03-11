@@ -1,0 +1,142 @@
+.container {
+  background: #191c29;
+  box-shadow: 1px 1px 5px 2px rgba(0, 152, 238, 0.15);
+  border-radius: 0px 0px 4px 4px;
+  min-height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.container::after {
+  content: "";
+  flex: auto;
+}
+
+.box {
+  background: #191c29;
+  box-shadow: 1px 1px 5px 2px rgba(0, 152, 238, 0.15);
+  border-radius: 4px;
+  width: 175px;
+  padding: 5px 7px;
+}
+
+.box .top {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.box .top .left img {
+  width: 31px;
+  height: 1/1;
+  object-fit: contain;
+}
+
+.box .top .right > span {
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 8px;
+  background: linear-gradient(92.48deg, #0199ee 2.11%, #01e5bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.box .top .right > h6 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  background: linear-gradient(92.48deg, #0199ee 2.11%, #01e5bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.box .top .right > p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.box .top .right > p span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background: linear-gradient(93.91deg, #0199ee -20.23%, #01e5bb 111.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.box .middle {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.box .middle .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.box .middle .box2 .left {
+  width: 18px;
+}
+
+.box .middle .box2 .left img {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.box .middle .box2 .right {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.box .middle .box2 > .right > h6 {
+  font-weight: 700;
+  font-size: 6px;
+  line-height: 7px;
+  background: linear-gradient(92.48deg, #0199ee 2.11%, #01e5bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.box .middle .box2 .right span {
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 11px;
+  background: linear-gradient(93.91deg, #0199ee -20.23%, #01e5bb 111.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.box .bottom p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 6px;
+  line-height: 7px;
+  background: linear-gradient(93.91deg, #0199ee -20.23%, #01e5bb 111.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

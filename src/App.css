@@ -1,0 +1,19 @@
+.container{
+  background-color: #1F2330;
+  width: min(915px, 100vw);
+  margin: 0 auto;
+  padding: 0px 50px;
+  padding-bottom: 55px;
+}
+
+@media screen and (max-width: 700px){
+  .container{
+    padding: 0px 20px;
+  }
+}
+
+.hb {
+  width: 30px;
+  margin: 0 auto;
+  display: block;
+}

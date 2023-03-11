@@ -1,0 +1,94 @@
+.nav{
+    background: linear-gradient(95.43deg, #0098EE 0.02%, #00EEB5 196.57%, #00EEB5 196.57%);
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+.nav .leftMobile{
+    display: none;
+}
+
+.nav .leftMobile button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav .left button{
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    outline: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 7px 15px;
+    cursor: pointer;
+    color:  #fff;
+}
+
+.nav .left button.selected{
+    background: #FFFFFF;
+    color:  #0098EE;
+}
+
+.nav .right form{
+    position: relative;
+}
+
+.nav .right form input{
+    background: linear-gradient(90.2deg, rgba(0, 96, 150, 0.5) 0%, rgba(0, 87, 66, 0.205) 100%);
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 7px 30px 7px 15px;
+    font-size: 16px;
+}
+
+.nav .right form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px){
+    .nav{
+        position: relative;
+    }
+    .nav .leftMobile{
+        display: block;
+    }
+    .nav .left{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%) scaleY(0);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 5px;
+        transform-origin: center 0;
+        transition: transform 500ms;
+    }
+    .nav .left.open{
+        transform: translateY(100%) scaleY(1);
+    }
+    .nav .left button{
+        color: #0098EE;
+    }
+}
